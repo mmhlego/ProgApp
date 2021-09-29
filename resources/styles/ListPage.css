@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-background-radius: 15;
+    -fx-border-color: #bbb;
+    -fx-border-radius: 15;
+}
+
+.ScrollPane , .ScrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+.ScrollPane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: -10px 0 -5px 0;  
+}
+
+.ScrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-background-radius: 8;
+}
+
+.ScrollPane .scroll-bar:vertical .increment-button .increment-arrow {
+    -fx-background-color: transparent;
+}
+
+.ScrollPane .scroll-bar:vertical .decrement-button .decrement-arrow {
+    -fx-background-color: transparent;
+}

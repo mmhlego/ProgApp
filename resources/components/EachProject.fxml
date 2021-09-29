@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EachProject">
+   <children>
+      <VBox fx:id="InformationPanel" alignment="CENTER" layoutX="25.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="625.0" spacing="15.0" style="-fx-background-color: #ffffffdd; -fx-background-radius: 0 0 15 15; -fx-border-radius: 0 0 15 15; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2); -fx-border-color: #bbb;">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #769FCD; -fx-background-radius: 15 0 0 15; -fx-border-radius: 15 0 0 15; -fx-border-color: #769FCD;" text="Project Path" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ProjectPathLBL" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="45.0" prefWidth="2000.0" style="-fx-background-color: white; -fx-background-radius: 0 15 15 0; -fx-border-radius: 0 15 15 0; -fx-border-color: #769FCD;" text="-" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #769FCD; -fx-background-radius: 15 0 0 15; -fx-border-radius: 15 0 0 15; -fx-border-color: #769FCD;" text="Date Created" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ProjectCreatedLBL" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="45.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-background-radius: 0 15 15 0; -fx-border-radius: 0 15 15 0; -fx-border-color: #769FCD;" text="-" textAlignment="CENTER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #769FCD; -fx-background-radius: 15 0 0 15; -fx-border-radius: 15 0 0 15; -fx-border-color: #769FCD;" text="Last Edited" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ProjectEditedLBL" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="45.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-background-radius: 0 15 15 0; -fx-border-radius: 0 15 15 0; -fx-border-color: #769FCD;" text="-" textAlignment="CENTER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #769FCD; -fx-background-radius: 15 0 0 15; -fx-border-radius: 15 0 0 15; -fx-border-color: #769FCD;" text="Git Repository" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ProjectRepoLBL" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="45.0" prefWidth="2000.0" style="-fx-background-color: white; -fx-background-radius: 0 15 15 0; -fx-border-radius: 0 15 15 0; -fx-border-color: #769FCD;" text="-" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fx:id="OpenRepoInGithubBTN" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="-40.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../icons/github.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefWidth="100.0" style="-fx-border-radius: 15; -fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="45.0" prefWidth="2000.0" style="-fx-background-color: #769FCD; -fx-background-radius: 15 15 0 0; -fx-border-radius: 15 15 0 0; -fx-border-color: #769FCD;" text="Description" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="DescriptionTA" prefHeight="80.0" style="-fx-background-color: white; -fx-background-radius: 0 0 15 15; -fx-border-color: #769FCD; -fx-border-radius: 0 0 15 15;" styleClass="TextArea" stylesheets="@../styles/TransparentTA.css" text="-">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="145.0" prefWidth="100.0" style="-fx-border-color: #769FCD; -fx-border-radius: 15; -fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="45.0" prefWidth="2000.0" style="-fx-background-color: #769FCD; -fx-background-radius: 15 15 0 0; -fx-border-radius: 15 15 0 0; -fx-border-color: #769FCD;" text="Open Project With ..." textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="EditorsBox" alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" spacing="50.0" />
+               </children>
+            </VBox>
+            <Group>
+               <children>
+                  <Button fx:id="DeleteProjectBTN" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="575.0" style="-fx-background-color: #F35E5E; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2);" text="Remove Project From List" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Cancel.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Group>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="25.0" right="25.0" top="25.0" />
+         </padding></VBox>
+      <HBox fx:id="SmallInfoPanel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="675.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2); -fx-border-color: #bbb;">
+         <children>
+            <Label fx:id="ProjectNameLBL" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="270.0" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="ProjectLanguageLBL" alignment="CENTER" prefHeight="80.0" prefWidth="110.0" style="-fx-border-color: #59A0D3; -fx-border-width: 0 0 0 1;" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <ImageView fx:id="ProjectLanguageIMG" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="ProjectVersionLBL" alignment="CENTER" prefHeight="80.0" prefWidth="150.0" style="-fx-border-color: #59A0D3; -fx-border-width: 0 0 0 1;" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <VBox fx:id="GitConnectionBox" alignment="CENTER" prefHeight="80.0" prefWidth="180.0" style="-fx-border-color: #59A0D3; -fx-border-width: 0 0  0 1;" />
+            <ImageView fx:id="ProjectInformationBTN" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <image>
+                  <Image url="@../Icons/Menu.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

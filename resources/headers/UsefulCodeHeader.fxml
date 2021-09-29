@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER" prefHeight="80.0" spacing="25.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UsefulCodeHeader">
+   <children>
+      <Group fx:id="ViewAllBTN">
+         <children>
+            <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: rgba(239, 131, 84, 0.9); -fx-background-color: #769FCD; -fx-background-radius: 15;" text="View All Codes     " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../UsefulCodeManager/Resources/Icons/All.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <TextField fx:id="SearchTF" alignment="CENTER" prefHeight="30.0" prefWidth="300.0" promptText="Search ..." style="-fx-background-color: rgba(255, 255, 255, 0.6); -fx-background-radius: 15; -fx-border-color: #ccc; -fx-border-radius: 15;" />
+            <ImageView fx:id="SearchBTN" fitHeight="28.0" fitWidth="28.0" layoutX="260.0" layoutY="0.7999992370605469" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../UsefulCodeManager/Resources/Icons/Search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="AddNewBTN">
+         <children>
+            <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: rgba(98, 255, 95, 0.7);; -fx-background-radius: 15;" text="Add New Code     " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../UsefulCodeManager/Resources/Icons/Add.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</HBox>

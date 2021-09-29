@@ -1,0 +1,10 @@
+.TextArea, .TextArea .viewport, .TextArea .viewport .content {
+    -fx-background-color: transparent;
+    -fx-text-align: center;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.TextArea .viewport .content .text {
+    -fx-text-alignment: center;
+}

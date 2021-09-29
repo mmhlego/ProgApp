@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="675.0" prefHeight="80.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: rgba(255,255,255,0.9); -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2); -fx-border-color: #bbb;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="ProjectNameLBL" alignment="CENTER" prefHeight="80.0" prefWidth="410.0" text="No Results">
+         <font>
+            <Font name="System Italic" size="26.0" />
+         </font></Label>
+   </children>
+</HBox>
