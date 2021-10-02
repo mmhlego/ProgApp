@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: transparent;" stylesheets="@../styles/CreateProject.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateProject">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="450.0" maxWidth="700.0" minHeight="450.0" minWidth="700.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1); -fx-border-color: #ccc;" styleClass="ScrollPane">
+         <content>
+            <VBox alignment="TOP_CENTER" minHeight="445.0" prefWidth="700.0" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Project Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="ProjectDisplayNameTF" focusColor="#769fcd" prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;">
+                           <HBox.margin>
+                              <Insets right="110.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="ArtifactGroup" alignment="CENTER" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Artifact ID">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="ProjectArtifactTF" focusColor="#769fcd" prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;">
+                           <HBox.margin>
+                              <Insets right="110.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Project Path">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="ProjectPathTF" focusColor="#769fcd" prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="BrowsePathBTN" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #769FCD;" text="Browse" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Version">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="VersionTF" focusColor="#769fcd" prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;" text="1.0">
+                           <HBox.margin>
+                              <Insets right="110.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="180.0" text="Initialize Git Repository ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="GitRepoNameTF" disable="true" focusColor="#769fcd" prefHeight="40.0" prefWidth="320.0" style="-fx-alignment: center;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXToggleButton fx:id="InitializeToggle" maxHeight="40.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" text=" " toggleColor="#769fcd" toggleLineColor="#b9d7ea" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" text="Language">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="LanguageTF" editable="false" focusColor="#769fcd" prefHeight="40.0" prefWidth="400.0" style="-fx-alignment: center;">
+                           <HBox.margin>
+                              <Insets right="110.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <GridPane fx:id="LanguagePanel" alignment="CENTER" prefHeight="130.0" prefWidth="651.0" style="-fx-background-radius: 10; -fx-border-radius: 10;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <VBox fx:id="LanguageSettingsPanel" />
+               </children>
+               <padding>
+                  <Insets bottom="-10.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="700.0" spacing="30.0">
+         <children>
+            <Group>
+               <children>
+                  <Button fx:id="CancelBTN" mnemonicParsing="false" prefHeight="35.0" prefWidth="325.0" style="-fx-background-color: #F35E5E; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2);" text="Cancel Process" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Cancel.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Group>
+            <Group>
+               <children>
+                  <Button fx:id="CreateBTN" mnemonicParsing="false" prefHeight="35.0" prefWidth="325.0" style="-fx-background-color: #49D357; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2);" text="Create Project" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../ProjectManager/src/main/java/Icons/Accept.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Group>
+         </children>
+         <padding>
+            <Insets right="-10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

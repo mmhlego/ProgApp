@@ -8,8 +8,8 @@ import javafx.scene.image.Image;
 import tools.Cmd;
 
 public enum Editors {
-    VSCode("Visual Studio Code", "vscode", "code"), Atom("Atom", "atom", "atom"),
-    Sublime("Sublime Text", "sublime", "subl");
+    FileManager("File Manager", "filemanager", "start"), VSCode("Visual Studio Code", "vscode", "code"),
+    Atom("Atom", "atom", "atom"), Sublime("Sublime Text", "sublime", "subl");
 
     String FullName, IconName, Prefix;
 
@@ -40,6 +40,11 @@ public enum Editors {
         ArrayList<Editors> ans = new ArrayList<>();
 
         for (Editors editor : Editors.values()) {
+            if (editor.equals(Editors.FileManager)) {
+                ans.add(editor);
+                continue;
+            }
+
             String CmdResult = Cmd.RunCommand(editor.getPrefix() + " --version").replaceAll("\n", "");
 
             if (!CmdResult.equals("\n") && CmdResult.length() != 0 && !CmdResult.contains("not recognized")) {

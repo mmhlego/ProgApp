@@ -1,5 +1,5 @@
 package database;
 
 public enum Tables {
-    Projects, UsefulCodes, Databases;
+    Projects, UsefulCodes, Todos, Databases;
 }

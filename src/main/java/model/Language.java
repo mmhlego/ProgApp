@@ -2,6 +2,7 @@ package model;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 
 import javafx.scene.image.Image;
 
@@ -50,5 +51,16 @@ public enum Language {
             if (lang.equals(language.toString()))
                 return language;
         return null;
+    }
+
+    public static ArrayList<Language> getAvailableLanguages() {
+        ArrayList<Language> ans = new ArrayList<>();
+
+        for (Language lang : Language.values()) {
+            if (lang.isAvailable())
+                ans.add(lang);
+        }
+
+        return ans;
     }
 }

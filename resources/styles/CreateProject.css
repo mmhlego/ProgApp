@@ -1,0 +1,21 @@
+.ScrollPane, .ScrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+.ScrollPane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: -10 0;
+}
+
+.ScrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color: #aaa;
+    -fx-background-radius: 10;
+}
+
+.ScrollPane .increment-button, .ScrollPane .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.ScrollPane .increment-arrow, .ScrollPane .decrement-arrow {
+    -fx-background-color: transparent;
+}

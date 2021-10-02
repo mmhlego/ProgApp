@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import model.Project;
+import stage.Overlay;
 import stage.StageManager;
 
 public class ProjectManagerHeader implements Initializable {
@@ -29,6 +30,16 @@ public class ProjectManagerHeader implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         SearchBTN.setOnMouseClicked(e -> Search(SearchTF.getText()));
+
+        ImportBTN.setOnMouseClicked(e -> {
+            CreateProject.setImportProject(true);
+            Overlay.OpenOverlay("resources/components/CreateProject.fxml");
+        });
+
+        AddNewBTN.setOnMouseClicked(e -> {
+            CreateProject.setImportProject(false);
+            Overlay.OpenOverlay("resources/components/CreateProject.fxml");
+        });
 
         Search("");
     }

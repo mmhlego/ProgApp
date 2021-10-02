@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="750.0" spacing="25.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TodoListHeader">
+   <children>
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefWidth="300.0" style="-fx-background-color: #F7FBFC; -fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #769FCD; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1);">
+         <children>
+            <TextField fx:id="SearchTF" alignment="CENTER" focusTraversable="false" prefHeight="35.0" prefWidth="280.0" promptText="Search Tasks ..." style="-fx-background-color: transparent; -fx-background-radius: 20 0 0 20; -fx-border-radius: 20 0 0 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="SearchBTN" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/todo/search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <Group>
+         <children>
+            <Button fx:id="AddNewBTN" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #49C057; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1);" text="Add New Task  " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView disable="true" fitHeight="41.0" fitWidth="41.0" layoutX="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/todo/add.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+   <padding>
+      <Insets left="25.0" right="25.0" />
+   </padding>
+</HBox>

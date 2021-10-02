@@ -46,18 +46,11 @@ public class FirstPage implements Initializable {
                 "resources/icons/start/useful-white.png", () -> PageController.OpenUsefulCodeManager());
 
         AddAnimation(TodoBTN, "#FF0000d0", "resources/icons/start/todo-red.png", "resources/icons/start/todo-white.png",
-                () -> {
-                    stage.StageManager.OpenListPage();
-                });
+                () -> PageController.OpenTodoList());
 
         AddAnimation(SqlBTN, "#00DC16d0", "resources/icons/start/database-green.png",
-                "resources/icons/start/database-white.png", () -> {
-                    VBox box = new VBox();
-                    box.setStyle("-fx-background-color:rgba(255,0,0,0.2);");
-                    stage.Overlay.ShowAlert("Under Developement ...  :)", AlertType.Developing, () -> {
-                        System.out.println(1);
-                    });
-                });
+                "resources/icons/start/database-white.png",
+                () -> stage.Overlay.ShowAlert("Under Developement ...  :)", AlertType.Developing));
 
         AddWindowControllers();
     }

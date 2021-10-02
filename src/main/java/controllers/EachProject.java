@@ -21,6 +21,7 @@ import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 import model.Editors;
 import model.Project;
+import tools.Cmd;
 import tools.Web;
 
 public class EachProject {
@@ -96,7 +97,7 @@ public class EachProject {
         ProjectLanguageIMG.setImage(project.getLanguage().getImage());
         ProjectVersionLBL.setText(project.getVersion());
 
-        OpenRepoInGithubBTN.setOnMouseClicked(e -> Web.openWebpage(project.getRepository()));
+        OpenRepoInGithubBTN.setOnMouseClicked(e -> Web.OpenWebpage(project.getRepository()));
 
         ProjectPathLBL.setText(project.getPath());
         ProjectCreatedLBL
@@ -169,14 +170,10 @@ public class EachProject {
     }
 
     private void OpenProjectInEditor(String prefix) {
-        Runtime runtime = Runtime.getRuntime();
-        try {
-            runtime.exec("cmd.exe /c " + prefix + " .", null, new File(project.getPath()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        Cmd.RunCommand(prefix + " .", project.getPath());
         project.UpdateLastEdited();
+        ProjectEditedLBL
+                .setText(project.getLastEdited().format(DateTimeFormatter.ofPattern("yy/MM/dd - HH:mm")).toString());
     }
 
     private void ToggleInformationPanel() {

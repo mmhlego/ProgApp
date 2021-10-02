@@ -10,6 +10,7 @@ import com.google.gson.Gson;
 import model.CodeType;
 import model.Language;
 import model.Project;
+import model.Todo;
 import model.UsefulCode;
 
 public class CustomResultSet {
@@ -90,7 +91,8 @@ public class CustomResultSet {
                     CodeType.FromString(results.getString(3)),
                     new Gson().fromJson(results.getString(6), ArrayList.class));
 
-        } else if (DataMode.equals(Tables.Databases)) {
+        } else if (DataMode.equals(Tables.Todos)) {
+            return new Todo(results.getString(1), results.getString(2), results.getString(3));
 
         }
         return null;
