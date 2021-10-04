@@ -11,16 +11,6 @@ public class Main extends Application {
     public static void main(String[] args) {
         Blur.loadBlurLibrary();
         launch(args);
-
-        // Connect();
-        // Todo t = new Todo("Sample", TodoLabels.Todo);
-        // t.InsertRecord();
-
-        // System.out.println(Arrays.toString(database.Selector.Select(Tables.Todos).ToArrayList().toArray()));
-
-        // System.out.println(Web.IsGitRepository("https://github.com/mmhlego/HATTube.git"));
-        // System.out.println(Web.IsGitRepository("http://github.com/mmhlego/HATTube.git"));
-
         System.exit(0);
     }
 
