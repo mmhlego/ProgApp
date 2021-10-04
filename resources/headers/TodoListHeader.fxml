@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="750.0" spacing="25.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TodoListHeader">
+<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="850.0" spacing="125.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TodoListHeader">
    <children>
       <HBox alignment="CENTER" maxHeight="-Infinity" prefWidth="300.0" style="-fx-background-color: #F7FBFC; -fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #769FCD; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1);">
          <children>

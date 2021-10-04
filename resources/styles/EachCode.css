@@ -1,0 +1,3 @@
+.TextArea , .TextArea .viewport , .TextArea .content {
+    -fx-background-color: transparent;
+}

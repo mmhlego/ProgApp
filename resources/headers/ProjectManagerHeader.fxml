@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="750.0" spacing="25.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProjectManagerHeader">
+<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" prefWidth="750.0" spacing="25.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProjectManagerHeader">
    <children>
       <HBox alignment="CENTER" maxHeight="-Infinity" prefWidth="220.0" style="-fx-background-color: #F7FBFC; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #769FCD; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1);">
          <children>
@@ -21,7 +21,7 @@
             </TextField>
             <ImageView fx:id="SearchBTN" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Icons/Search.png" />
+                  <Image url="@../icons/projectManager/Search.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -41,7 +41,7 @@
             </Button>
             <ImageView disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="180.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Icons/Add-Yellow.png" />
+                  <Image url="@../icons/projectManager/Add-Yellow.png" />
                </image>
             </ImageView>
          </children>
@@ -58,7 +58,7 @@
             </Button>
             <ImageView disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="180.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Icons/Add.png" />
+                  <Image url="@../icons/projectManager/Add.png" />
                </image>
             </ImageView>
          </children>

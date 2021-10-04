@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EachProject">
+<AnchorPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EachProject">
    <children>
       <VBox fx:id="InformationPanel" alignment="CENTER" layoutX="25.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="625.0" spacing="15.0" style="-fx-background-color: #ffffffdd; -fx-background-radius: 0 0 15 15; -fx-border-radius: 0 0 15 15; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2); -fx-border-color: #bbb;">
          <children>
@@ -95,7 +95,7 @@
                         <Insets left="-40.0" />
                      </HBox.margin>
                      <image>
-                        <Image url="@../icons/github.png" />
+                        <Image url="@../icons/projectManager/github.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -142,7 +142,7 @@
                   </Button>
                   <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../icons/Cancel.png" />
+                        <Image url="@../icons/projectManager/Cancel.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -188,7 +188,7 @@
                   <Insets />
                </HBox.margin>
                <image>
-                  <Image url="@../Icons/Menu.png" />
+                  <Image url="@../icons/projectManager/Menu.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />

@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
@@ -12,9 +13,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EachCode">
+<VBox alignment="CENTER" stylesheets="@../styles/EachCode.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EachCode">
    <children>
-      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: rgba(255, 255, 255, 0.5); -fx-background-radius: 5;">
+      <HBox fx:id="MainHB" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="850.0" spacing="20.0" style="-fx-background-color: rgba(255,255,255,0.7); -fx-background-radius: 10; -fx-border-color: #ccc; -fx-border-radius: 10;">
          <padding>
             <Insets left="25.0" right="25.0" />
          </padding>
@@ -23,30 +24,33 @@
             <Line endY="80.0" />
             <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="120.0">
                <children>
-                  <Label prefHeight="30.0" prefWidth="120.0" text="Code Type:" textFill="WHITE">
+                  <Label prefHeight="30.0" prefWidth="120.0" text="Code Type:">
                      <font>
                         <Font name="Consolas" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="CodeTypeLBL" alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="-" textFill="WHITE">
+                  <Label fx:id="CodeTypeLBL" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="120.0" text="-">
                      <font>
                         <Font name="Consolas" size="16.0" />
                      </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
                   </Label>
                </children>
             </VBox>
             <Line endY="80.0" />
-            <TextArea fx:id="DescriptionArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="300.0" styleClass="TextArea" stylesheets="@EachCode.css" text="description" wrapText="true">
+            <TextArea fx:id="DescriptionArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="250.0" styleClass="TextArea" text="description" wrapText="true">
                <font>
                   <Font name="Consolas" size="16.0" />
                </font>
             </TextArea>
             <Line endY="80.0" />
-            <FlowPane fx:id="TagsBox" hgap="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="100.0" vgap="7.0" />
+            <FlowPane fx:id="TagsBox" hgap="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="150.0" vgap="7.0" />
             <Line endY="80.0" />
             <ImageView fx:id="MoreBTN" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Resources/Icons/More.png" />
+                  <Image url="@../icons/usefulCodes/More.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -54,17 +58,35 @@
             </ImageView>
          </children>
       </HBox>
-      <VBox fx:id="MoreBox" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="650.0" spacing="25.0" style="-fx-background-color: rgba(255, 255, 255, 0.4); -fx-background-radius: 0 0 5 5;">
+      <VBox fx:id="MoreBox" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="800.0" spacing="25.0" style="-fx-background-color: rgba(255, 255, 255, 0.4); -fx-background-radius: 0 0 10 10; -fx-border-color: #ccc; -fx-border-radius: 0 0 10 10;">
          <children>
             <HBox fx:id="IOBox" prefHeight="50.0" spacing="26.0">
                <children>
-                  <VBox fx:id="InBox" prefWidth="412.0" />
-                  <VBox fx:id="OutBox" prefWidth="412.0" />
+                  <VBox fx:id="InBox" prefWidth="362.0" />
+                  <VBox fx:id="OutBox" prefWidth="362.0" />
                </children></HBox>
+            <Button fx:id="DeleteCodeBTN" alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" style="-fx-background-color: #F35E5E; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0 , 0, 2);" text="Remove Code From List" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="330.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/usefulCodes/Cancel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
          <padding>
-            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+            <Insets bottom="40.0" left="25.0" right="25.0" top="40.0" />
          </padding>
+         <VBox.margin>
+            <Insets top="-2.0" />
+         </VBox.margin>
       </VBox>
    </children>
 </VBox>

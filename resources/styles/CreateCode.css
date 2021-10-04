@@ -1,0 +1,34 @@
+.ScrollPane {
+    -fx-background-color: transparent;
+}
+
+.ScrollPane .viewport {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10;
+}
+
+.ScrollPane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: -10 0;
+}
+
+.ScrollPane .increment-arrow , .ScrollPane .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.ScrollPane .thumb {
+    -fx-background-color: #aaa;
+    -fx-background-radius: 10;
+}
+
+.TextArea .viewport {
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10;
+}
+
+.TextArea , .TextArea .content {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

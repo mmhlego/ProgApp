@@ -166,7 +166,7 @@
                   </Button>
                   <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../icons/Cancel.png" />
+                        <Image url="@../icons/projectManager/Cancel.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -189,7 +189,7 @@
                   </Button>
                   <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../ProjectManager/src/main/java/Icons/Accept.png" />
+                        <Image url="@../icons/projectManager/Accept.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />

@@ -15,7 +15,7 @@ public class PageController {
     }
 
     public static void OpenUsefulCodeManager() {
-        tools.Window.setStageSizes(850, 700);
+        tools.Window.setStageSizes(900, 700);
         stage.StageManager.OpenListPage();
         stage.StageManager.SetHeader("resources/headers/UsefulCodeHeader.fxml");
         stage.StageManager.SetTitle("MMH Useful Code Manager");

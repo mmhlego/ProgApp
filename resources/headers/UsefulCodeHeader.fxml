@@ -10,12 +10,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<HBox alignment="CENTER" prefHeight="80.0" spacing="25.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UsefulCodeHeader">
+<HBox alignment="CENTER" prefHeight="80.0" prefWidth="900.0" spacing="25.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UsefulCodeHeader">
    <children>
-      <Group fx:id="ViewAllBTN">
+      <Group>
          <children>
-            <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: rgba(239, 131, 84, 0.9); -fx-background-color: #769FCD; -fx-background-radius: 15;" text="View All Codes     " textFill="WHITE">
+            <Button fx:id="ViewAllBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: rgba(239, 131, 84, 0.9); -fx-background-color: #769FCD; -fx-background-radius: 20;" text="View All Codes     " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -23,9 +22,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="135.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="165.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../UsefulCodeManager/Resources/Icons/All.png" />
+                  <Image url="@../icons/usefulCodes/All.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -35,10 +34,10 @@
       </Group>
       <Group>
          <children>
-            <TextField fx:id="SearchTF" alignment="CENTER" prefHeight="30.0" prefWidth="300.0" promptText="Search ..." style="-fx-background-color: rgba(255, 255, 255, 0.6); -fx-background-radius: 15; -fx-border-color: #ccc; -fx-border-radius: 15;" />
-            <ImageView fx:id="SearchBTN" fitHeight="28.0" fitWidth="28.0" layoutX="260.0" layoutY="0.7999992370605469" pickOnBounds="true" preserveRatio="true">
+            <TextField fx:id="SearchTF" alignment="CENTER" prefHeight="35.0" prefWidth="300.0" promptText="Search ..." style="-fx-background-color: rgba(255, 255, 255, 0.6); -fx-background-radius: 20; -fx-border-color: #ccc; -fx-border-radius: 20;" />
+            <ImageView fx:id="SearchBTN" fitHeight="28.0" fitWidth="28.0" layoutX="265.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../UsefulCodeManager/Resources/Icons/Search.png" />
+                  <Image url="@../icons/usefulCodes/Search.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -46,9 +45,9 @@
             </ImageView>
          </children>
       </Group>
-      <Group fx:id="AddNewBTN">
+      <Group>
          <children>
-            <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: rgba(98, 255, 95, 0.7);; -fx-background-radius: 15;" text="Add New Code     " textFill="WHITE">
+            <Button fx:id="AddNewBTN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #61CD4F; -fx-background-radius: 20;" text="Add New Code     " textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -56,9 +55,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="140.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView disable="true" fitHeight="30.0" fitWidth="30.0" layoutX="168.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../UsefulCodeManager/Resources/Icons/Add.png" />
+                  <Image url="@../icons/usefulCodes/Add.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />

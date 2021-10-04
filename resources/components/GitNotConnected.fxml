@@ -5,11 +5,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #FE5353; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #FE5353; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0 , 0, 1);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Icons/git.png" />
+            <Image url="@../icons/others/git.png" />
          </image>
       </ImageView>
       <Label layoutX="30.0" prefHeight="30.0" prefWidth="110.0" text="Not Connected" textFill="WHITE" />
