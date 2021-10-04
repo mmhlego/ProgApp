@@ -2,6 +2,7 @@ package controllers;
 
 import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
@@ -178,8 +179,18 @@ public class CreateProject implements Initializable {
     }
 
     private void AddLanguages() {
-        int index = 0;
-        for (Language language : Language.getAvailableLanguages()) {
+        int index = cols;
+
+        ArrayList<Language> languages = new ArrayList<>();
+
+        if (ImportProject) {
+            for (Language language : Language.values())
+                languages.add(language);
+        } else {
+            languages = Language.getAvailableLanguages();
+        }
+
+        for (Language language : languages) {
             ImageView img = new ImageView(language.getImage());
             img.setFitHeight(80);
             img.setFitWidth(80);
