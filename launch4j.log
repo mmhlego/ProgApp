@@ -1,0 +1,31 @@
+
+
+Version:	3.12
+CmdLine:	X:\Projects\Programming\Java\ProgApp\ProgApp.exe --l4j-debug
+WOW64:		yes
+Working dir:	X:\Projects\Programming\Java\ProgApp\.
+Java min ver:	1.008.000
+Java max ver:	1.009.000
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_66\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_66
+Check launcher:	C:\Program Files\Java\jre1.8.0_66\bin\javaw.exe (OK)
+Match:		1.008.000_066
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_66
+Ignore:		1.008.000_066
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\15
+Ignore:		1.015.000
+Check:		SOFTWARE\JavaSoft\JDK\15.0.1
+Ignore:		1.015.000_001
+Runtime used:	1.008.000_066 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_66\bin\javaw.exe
+Launcher args:	-jar "X:\Projects\Programming\Java\ProgApp\ProgApp.exe"
+Args length:	55/32768 chars
+Exit code:	0
