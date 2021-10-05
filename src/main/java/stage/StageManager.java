@@ -1,6 +1,7 @@
 package stage;
 
 import java.io.File;
+import java.io.FileInputStream;
 
 import com.kieferlam.javafxblur.Blur;
 
@@ -10,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -28,6 +30,11 @@ public class StageManager {
         CurrentStage.initStyle(StageStyle.TRANSPARENT);
         CurrentStage.show();
         Blur.applyBlur(CurrentStage, Blur.BLUR_BEHIND);
+        try {
+            CurrentStage.getIcons().add(new Image(new FileInputStream(new File("resources/icons/Logo.png"))));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static Stage getCurrentStage() {
