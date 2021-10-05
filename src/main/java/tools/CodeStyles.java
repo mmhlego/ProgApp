@@ -11,7 +11,7 @@ public class CodeStyles {
         } else if (type.equals(Type.Symbol) && IsOperational(string)) {
             return "#56b6c2";
         } else if (type.equals(Type.Word)) {
-            if (KeyWords().contains(string)) {
+            if (PinkKeyWords().contains(string)) {
                 return "#c678dd";
             } else if (IsNumber(string)) {
                 return "#d19a66";
@@ -58,8 +58,8 @@ public class CodeStyles {
         return !Conflict;
     }
 
-    private static String KeyWords() {
-        String WholeSequence = "for while do if else continue break switch int double float long package public private protected class enum let var final import";
+    private static String PinkKeyWords() {
+        String WholeSequence = "for while do if else continue break switch int double float long package public private protected class enum let var final import from def return";
 
         return WholeSequence;
     }
@@ -69,7 +69,7 @@ public class CodeStyles {
     }
 
     private static String BlueKeyWords() {
-        return "cin cout length size add print println";
+        return "cin cout length size add print println randint";
     }
 
     private static String RedKeywords() {

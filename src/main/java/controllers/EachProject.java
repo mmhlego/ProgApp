@@ -174,6 +174,7 @@ public class EachProject {
         project.UpdateLastEdited();
         ProjectEditedLBL
                 .setText(project.getLastEdited().format(DateTimeFormatter.ofPattern("yy/MM/dd - HH:mm")).toString());
+        ProjectManagerHeader.Search("");
     }
 
     private void ToggleInformationPanel() {

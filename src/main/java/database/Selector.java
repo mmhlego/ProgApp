@@ -35,7 +35,7 @@ public class Selector {
     }
 
     public enum OrderBy {
-        ID("ID"), CreatorID("CreatorID");
+        ID("ID"), LastEdited("LastEdited");
 
         String Value;
 

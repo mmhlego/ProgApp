@@ -5,6 +5,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import database.Selector.Arrangement;
+import database.Selector.OrderBy;
 import database.Tables;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -49,7 +51,9 @@ public class ProjectManagerHeader implements Initializable {
         Condition = Condition.replace("{Search}", text);
 
         ArrayList<Project> Results = (ArrayList<Project>) database.Selector
-                .Select(Tables.Projects, new String[] { Condition }).ToArrayList();
+                .Select(Tables.Projects, new String[] { Condition }, new OrderBy[] { OrderBy.LastEdited },
+                        new Arrangement[] { Arrangement.DESC })
+                .ToArrayList();
 
         StageManager.getListBox().getChildren().clear();
         if (Results.size() == 0)
